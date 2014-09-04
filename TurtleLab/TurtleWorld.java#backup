@@ -1,0 +1,17 @@
+import java.awt.Color;
+
+public class TurtleWorld
+{
+    public static void main(String args[])
+    {
+        World turtleWorld = new World();
+        Turtle turtle = new Turtle(turtleWorld);
+        Turtle turtle2 = new Turtle(turtleWorld);
+        turtle2.setPenColor(Color.GREEN);
+        turtle.setPenColor(Color.RED);
+        turtle.penDown();
+        turtle.forward(50);
+        turtle2.penDown();
+        turtle2.backward(50);
+    }
+}
