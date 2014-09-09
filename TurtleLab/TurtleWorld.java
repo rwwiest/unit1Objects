@@ -5,8 +5,10 @@ public class TurtleWorld
     public static void main(String args[])
     {
         World turtleWorld = new World();
-        Turtle turtle222 = new Turtle(turtleWorld);
-        Turtle turtle = new Turtle(turtleWorld);
+        Turtle turtle222 = new Turtle(300,300,turtleWorld);
+        Turtle turtle = new Turtle(300,300,turtleWorld);
+        Picture background = new Picture("flag.jpg");
+        turtleWorld.setPicture(background);
         turtle222.setPenColor(Color.RED);
         turtle.setPenColor(Color.BLUE);
         turtle.penDown();
